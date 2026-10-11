@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>이정인 — Graphic &amp; Branding Designer Portfolio</title>
+<meta name="description" content="무한히 배우고 성장하는 디자이너 이정인의 포트폴리오. 브랜딩, 에디토리얼, 그래픽, 콘텐츠, UI, 영상 디자인 작업 10개.">
+<meta name="theme-color" content="#f3f2ee">
+<meta property="og:title" content="이정인 — Portfolio">
+<meta property="og:description" content="Endless Ideas, Constant Growth. 브랜딩 · 에디토리얼 · 그래픽 · 콘텐츠 · UI · 영상 디자인">
+<meta property="og:image" content="assets/img/p01-1920.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%23e03c8a'/%3E%3Cpath d='M2 1h1v5h3v1H2z' fill='%23111'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- 블록 입체 효과: 도형을 따라 안쪽 테두리 + 좌상단 하이라이트 + 우하단 음영 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <filter id="blk-3d" x="-4%" y="-4%" width="108%" height="108%" color-interpolation-filters="sRGB">
+    <feMorphology in="SourceAlpha" operator="erode" radius="2" result="inner"/>
+    <feComposite in="SourceAlpha" in2="inner" operator="out" result="rimA"/>
+    <feFlood flood-color="#111111" result="inkC"/>
+    <feComposite in="inkC" in2="rimA" operator="in" result="rim"/>
+    <feOffset in="inner" dx="4" dy="4" result="s1"/>
+    <feComposite in="inner" in2="s1" operator="out" result="tlA"/>
+    <feFlood flood-color="#ffffff" flood-opacity=".34" result="wC"/>
+    <feComposite in="wC" in2="tlA" operator="in" result="tl"/>
+    <feOffset in="inner" dx="-4" dy="-4" result="s2"/>
+    <feComposite in="inner" in2="s2" operator="out" result="brA"/>
+    <feFlood flood-color="#000000" flood-opacity=".22" result="kC"/>
+    <feComposite in="kC" in2="brA" operator="in" result="br"/>
+    <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tl"/><feMergeNode in="br"/><feMergeNode in="rim"/></feMerge>
+  </filter>
+</defs></svg>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="site-head" id="top">
+  <a class="brand" href="#/" aria-label="이정인 포트폴리오 홈">
+    <span class="brand__px" aria-hidden="true"></span>
+    <span class="brand__name">이정인</span>
+    <span class="brand__en px">LEE JEONG IN</span>
+  </a>
+  <nav class="nav" aria-label="주요 메뉴">
+    <ul>
+      <li><a href="#selected" data-nav="selected">Selected</a></li>
+      <li><a href="#works" data-nav="works">Works</a></li>
+      <li><a href="#about" data-nav="about">About</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a class="head-pdf" href="assets/pdf/LeeJeongIn_Portfolio_2025.pdf" target="_blank" rel="noopener">PDF<span aria-hidden="true">↗</span><span class="sr">(새 창)</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+    <span class="menu-btn__label">Menu</span>
+    <span class="menu-btn__icon" aria-hidden="true"><i></i><i></i></span>
+  </button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="모바일 메뉴">
+    <ol class="menu__list">
+      <li><a href="#selected"><span class="px">01</span>Selected</a></li>
+      <li><a href="#works"><span class="px">02</span>Works</a></li>
+      <li><a href="#about"><span class="px">03</span>About</a></li>
+      <li><a href="#contact"><span class="px">04</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__foot">
+    <a href="mailto:li020810@naver.com">li020810@naver.com</a>
+    <a href="assets/pdf/LeeJeongIn_Portfolio_2025.pdf" target="_blank" rel="noopener">Portfolio PDF ↗</a>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ HOME ============ -->
+<div class="view view--home" id="home">
+
+  <section class="drop" id="drop" aria-labelledby="drop-title">
+    <h1 class="sr" id="drop-title">이정인 포트폴리오 — 분야별 작업</h1>
+    <div class="drop__ctrl">
+      <p class="sr" id="drop-hint">블록을 누르면 분야별 작업 목록이나 작품 상세로 이동합니다. 마우스 사용자는 블록을 끌어 던질 수 있습니다.</p>
+      <button type="button" class="drop__btn" data-drop-again hidden>Drop again <span aria-hidden="true">↻</span></button>
+      <a class="drop__btn drop__btn--ink" href="#/works">All works <sup class="px" data-works-count>10</sup> <span aria-hidden="true">→</span></a>
+    </div>
+
+    <!-- 분야 블록: JS·물리 엔진이 없거나 실패해도 그대로 동작하는 링크 목록 -->
+    <nav class="drop__stage" aria-label="분야별 작업" aria-describedby="drop-hint">
+      <ul class="drop__list">
+        <li><a class="blk" data-cat="branding" href="#/works/branding" style="--c:#e9569a;--t:#111111"><span class="blk__word">Branding<sup class="px">03</sup></span></a></li>
+        <li><a class="blk" data-cat="editorial" href="#/works/editorial" style="--c:#d6ed61;--t:#111111"><span class="blk__word">Editorial<sup class="px">02</sup></span></a></li>
+        <li><a class="blk" data-cat="graphic" href="#/works/graphic" style="--c:#2c00d1;--t:#ffffff"><span class="blk__word">Graphic<sup class="px">04</sup></span></a></li>
+        <li><a class="blk" data-cat="contents" href="#/works/contents" style="--c:#fe0058;--t:#111111"><span class="blk__word">Contents<sup class="px">00</sup></span></a></li>
+        <li><a class="blk" data-cat="ui" href="#/works/ui" style="--c:#162336;--t:#f2e52a"><span class="blk__word">UI<sup class="px">00</sup></span></a></li>
+        <li><a class="blk" data-cat="video" href="#/works/video" style="--c:#ff7a1a;--t:#111111"><span class="blk__word">Video<sup class="px">01</sup></span></a></li>
+        <li><a class="blk blk--name" href="#about" style="--c:#ffffff;--t:#111111"><span class="blk__word"><span class="blk__name px">LEE JEONG IN</span><span class="sr"> — 이정인 소개 보기</span></span></a></li>
+      </ul>
+      <div class="drop__board"></div>
+      <div class="drop__peek" aria-hidden="true"></div>
+    </nav>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track"></div>
+  </div>
+
+  <section class="selected" id="selected" aria-labelledby="selected-title">
+    <div class="selected__bg" aria-hidden="true"></div>
+    <header class="sec-head sec-head--selected">
+      <p class="tag">Selected Works</p>
+      <h2 id="selected-title" class="sec-title">대표 작업<span class="px sec-count">04</span></h2>
+    </header>
+    <div class="selected__list"></div>
+  </section>
+
+  <section class="works" id="works" aria-labelledby="works-title">
+    <header class="works__head">
+      <h2 id="works-title" class="works__title">Works<sup class="px" data-total></sup></h2>
+      <p class="works__lead">2023년부터 2025년까지, 브랜딩부터 영상까지 여섯 분야의 작업입니다.</p>
+    </header>
+    <div class="works__bar">
+      <div class="filters" role="group" aria-label="분야별로 보기"></div>
+      <div class="viewtoggle" role="group" aria-label="보기 방식">
+        <button type="button" data-view="grid" aria-pressed="true">Grid</button>
+        <button type="button" data-view="list" aria-pressed="false">List</button>
+      </div>
+    </div>
+    <p class="sr" aria-live="polite" data-live></p>
+    <ul class="works__grid" data-mode="grid"></ul>
+    <div class="peek" aria-hidden="true"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" width="480" height="300"></div>
+  </section>
+
+  <!-- About: 게임 캐릭터 화면 — 캐릭터 · 정보 탭 + 넓은 정보 패널 · 인벤토리 -->
+  <section class="about char" id="about" aria-labelledby="about-title">
+    <p class="tag char__tag">About</p>
+    <h2 id="about-title" class="sr">About — 이정인 소개</h2>
+    <div class="win">
+      <div class="win__bar" aria-hidden="true">
+        <span class="win__dots"><i></i><i></i><i></i></span>
+        <span class="px win__title">PROFILE</span>
+        <span class="px win__sub">Endless Ideas, Constant Growth</span>
+      </div>
+      <div class="char__layout">
+
+        <figure class="hero">
+          <div class="card">
+            
+            <div class="card__photo">
+              <img src="assets/img/about-portrait.jpg" width="1000" height="1400" alt="이정인 프로필 사진 — 검은 상의와 청바지를 입고 의자에 앉아 정면을 바라보는 모습" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <figcaption class="plate">
+            <b class="plate__name">이정인</b>
+            <span class="plate__line">LEE JEONG IN</span>
+            <span class="plate__line">2002.08.10</span>
+          </figcaption>
+        </figure>
+
+        <div class="info">
+          <div class="tabs" role="tablist" aria-label="소개 정보" data-tabs></div>
+          <div class="panel" role="tabpanel" id="info-panel" tabindex="0" data-panel></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PROJECT DETAIL ============ -->
+<article class="view view--project" id="project" hidden aria-labelledby="pj-title"></article>
+
+</main>
+
+<footer class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact__inner">
+    <p class="tag tag--ink">Contact</p>
+    <h2 id="contact-title" class="contact__title">Let’s talk<br>design<span class="px">_</span></h2>
+    <a class="contact__mail" href="mailto:li020810@naver.com"><span>li020810</span><span>@naver.com</span></a>
+    <ul class="contact__links">
+      <li><a href="https://www.instagram.com/l0w.p0ly/" target="_blank" rel="noopener"><span class="px">IG</span>@l0w.p0ly<span aria-hidden="true">↗</span><span class="sr">(새 창)</span></a></li>
+      <li data-phone hidden></li>
+      <li><a href="assets/pdf/LeeJeongIn_Portfolio_2025.pdf" target="_blank" rel="noopener"><span class="px">PDF</span>포트폴리오 보기<span aria-hidden="true">↗</span><span class="sr">(새 창)</span></a></li>
+      <li><a href="assets/pdf/LeeJeongIn_Portfolio_2025.pdf" download="이정인_포트폴리오_2025.pdf"><span class="px">PDF</span>다운로드 <small>(8.5MB)</small><span aria-hidden="true">↓</span></a></li>
+    </ul>
+    <div class="contact__foot">
+      <p class="px">© <span data-year></span> LEE JEONG IN</p>
+      <a class="px" href="#top" data-totop>Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="이미지 크게 보기">
+  <figure tabindex="-1">
+    <img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=">
+    <figcaption class="px"></figcaption>
+  </figure>
+  <button type="button" class="lb-btn lb-close" aria-label="닫기">✕</button>
+  <button type="button" class="lb-btn lb-prev" aria-label="이전 이미지">←</button>
+  <button type="button" class="lb-btn lb-next" aria-label="다음 이미지">→</button>
+</dialog>
+
+<script src="assets/vendor/matter.min.js" defer></script>
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/drop.js" defer></script>
+</body>
+</html>
