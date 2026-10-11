@@ -513,8 +513,10 @@ main:focus { outline: none; }
     linear-gradient(var(--ink), var(--ink)) 0 100% / 22px 3px, linear-gradient(var(--ink), var(--ink)) 0 100% / 3px 22px,
     linear-gradient(var(--ink), var(--ink)) 100% 100% / 22px 3px, linear-gradient(var(--ink), var(--ink)) 100% 100% / 3px 22px;
   background-repeat: no-repeat;
-}.plate { margin-top: 22px; display: grid; gap: 2px; padding: 14px 16px; background: var(--ink); color: var(--white); border: 2px solid var(--ink); box-shadow: 5px 5px 0 var(--pink); }
-.plate__name { display: block; }
+}.plate { margin-top: 22px; display: grid; gap: 6px; padding: 16px 18px; background: var(--ink); color: var(--white); border: 2px solid var(--ink); box-shadow: 5px 5px 0 var(--pink); }
+.plate__title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.plate__name { display: inline; }
+.plate__date { display: block; color: #f2e52a; }
 .plate__line { display: block; color: #e4e3dd; }
 
 /* 정보 탭 */
@@ -545,8 +547,8 @@ main:focus { outline: none; }
 .facts div { display: grid; grid-template-columns: 5em minmax(0, 1fr); align-items: baseline; gap: 12px; padding: 16px 0; border-bottom: 2px solid var(--line); }
 .facts div:first-child { border-top: 2px solid var(--line); }
 .facts dt, .facts dd { font-family: var(--sans); font-size: var(--fs-body); line-height: var(--lh-body); letter-spacing: var(--ls-body); }
-.facts dt { font-weight: 400; color: var(--panel-ink); }
-.facts dd { font-weight: 800; overflow-wrap: anywhere; word-break: keep-all; }
+.facts dt { font-weight: 800; color: var(--panel-ink); }
+.facts dd { font-weight: 400; overflow-wrap: anywhere; word-break: keep-all; }
 .rows { max-width: 38em; }
 .rows li { display: grid; grid-template-columns: 4.5em 1fr; gap: 12px; padding: 16px 0; border-bottom: 2px solid var(--line); }
 .rows li:first-child { border-top: 2px solid var(--line); }
@@ -701,12 +703,12 @@ main:focus { outline: none; }
 /* 본문 — 프로필·학력·자격·수상·Skills 설명·대표 작업 설명이 모두 같은 스타일 */
 body, .panel, .feat__desc, .prose p, .rows li > span:not(.px), .item__desc, .panel__note, .menu__foot, .pj-meta dd, .contact__links a, .contact__links [data-phone] > * { font-size: var(--fs-body); line-height: var(--lh-body); letter-spacing: var(--ls-body); font-weight: var(--fw-body); }
 /* 탭 · 버튼 · 메뉴 */
-.brand__name, .nav a, .head-pdf, .menu-btn, .btn, .filters button, .viewtoggle button, .drop__btn, .tab, .chips a, .chips__ko, .item__works a, .pj-back, .plate__line { font-size: var(--fs-ui); line-height: var(--lh-ui); letter-spacing: var(--ls-ui); font-weight: var(--fw-ui); }
+.brand__name, .nav a, .head-pdf, .menu-btn, .btn, .filters button, .viewtoggle button, .drop__btn, .tab, .chips a, .chips__ko, .item__works a, .pj-back, .plate__line, .plate__en { font-size: var(--fs-ui); line-height: var(--lh-ui); letter-spacing: var(--ls-ui); font-weight: var(--fw-ui); }
 /* 보조 정보 · 캡션 · 라벨 */
 .tag, .brand__en, .feat__no, .feat__meta li, .feat__cap, .w__no, .w__year, .w__cat, .w__fig::after, .pj-crumbs .px, .pj-tag, .pj-meta dt, .pj-note, .pj-next .px, .shot figcaption,
 .contact__foot, .contact__links .px, .contact__links small, .contact__title .px, .lightbox figcaption, .peek-cap span, .peek-list, .peek-tag span,
 .drop__btn sup, .filters button sup, .works__title sup, .sec-count, .menu__list .px, .win__bar, .panel__label, .rows .px, .slot__name,
-.item__head .px, .chips sup { font-size: var(--fs-meta); line-height: var(--lh-meta); letter-spacing: var(--ls-meta); font-weight: var(--fw-meta); }
+.item__head .px, .chips sup, .plate__date { font-size: var(--fs-meta); line-height: var(--lh-meta); letter-spacing: var(--ls-meta); font-weight: var(--fw-meta); }
 
 /* ---------------- Reveal motion ---------------- */
 .motion [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: var(--d, 0ms); }
@@ -743,3 +745,6 @@ body, .panel, .feat__desc, .prose p, .rows li > span:not(.px), .item__desc, .pan
 .works__grid[data-mode="grid"] .w .w__fig.w__fig--full { aspect-ratio: auto; background: transparent; }
 .works__grid[data-mode="grid"] .w .w__fig--full img { display: block; width: 100%; height: auto; object-fit: fill; transition: none; transform: none; }
 .works__grid[data-mode="grid"] .w a:hover .w__fig--full img { transform: none; }
+/* 원본 비율 썸네일: List 보기(모바일)도 높이를 비율대로 — 잘림 없음 */
+.works__grid[data-mode="list"] .w .w__fig.w__fig--full { aspect-ratio: auto; align-self: start; background: transparent; }
+.works__grid[data-mode="list"] .w .w__fig--full img { display: block; width: 100%; height: auto; object-fit: fill; transition: none; transform: none; }

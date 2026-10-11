@@ -187,7 +187,7 @@ window.PROJECTS = [
     title: "VANS × BAPE", kind: "Promo Video",
     date: "2025.9 – 2025.11", year: "2025", tool: "Adobe After Effects",
     desc: "VANS × BAPE의 협업 콘셉트를 바탕으로 홍보 영상을 제작하였습니다. 두 브랜드의 스트리트 감성을 강조하기 위해 과감한 타이포그래피와 역동적인 모션을 활용하여 자유롭고 개성 있는 브랜드 이미지를 전달하도록 디자인하였습니다.",
-    color: "#141414", ink: "#ffffff", cover: "vans", thumbPos: "62% 55%", featured: 4,
+    color: "#141414", ink: "#ffffff", cover: "vans", thumbFull: true, featured: 4,
     video: { src: "assets/video/vans-bape.mp4", poster: "assets/video/vans-bape-poster.webp", w: 3840, h: 2160, title: "VANS × BAPE 홍보 영상" },
     gallery: ["g-vans-1"]
   }
